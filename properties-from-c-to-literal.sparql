@@ -1,0 +1,10 @@
+construct {
+?p a owl:DatatypeProperty.
+?p rdfs:domain ?sclass .
+}
+
+where {
+?s a ?sclass .
+?s ?p ?o .
+FILTER isLiteral(?o)
+} group by ?sclass ?p

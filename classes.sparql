@@ -1,0 +1,6 @@
+construct {
+?class a owl:Class
+}
+where {
+  ?s a ?class
+} group by ?class 

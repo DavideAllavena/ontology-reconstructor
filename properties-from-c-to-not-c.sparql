@@ -1,0 +1,12 @@
+construct {
+?p a owl:ObjectProperty .
+?p rdfs:domain ?sclass .
+}
+where {
+?s a ?sclass .
+MINUS {
+?o a ?oclass .
+}
+FILTER ISURI(?o)
+?s ?p ?o .
+} group by ?sclass ?p

@@ -1,0 +1,11 @@
+construct {
+?p a owl:ObjectProperty .
+?p rdfs:domain ?sclass .
+?p rdfs:range ?oclass .
+}
+
+where {
+?s a ?sclass .
+?o a ?oclass .
+?s ?p ?o .
+} group by ?sclass ?oclass ?p
