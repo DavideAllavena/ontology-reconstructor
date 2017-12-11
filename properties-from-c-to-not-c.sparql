@@ -9,4 +9,4 @@ MINUS {
 }
 FILTER ISURI(?o)
 ?s ?p ?o .
-} group by ?sclass ?p
+} 

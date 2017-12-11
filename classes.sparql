@@ -3,4 +3,4 @@ construct {
 }
 where {
   ?s a ?class
-} group by ?class 
+} 

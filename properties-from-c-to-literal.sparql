@@ -7,4 +7,4 @@ where {
 ?s a ?sclass .
 ?s ?p ?o .
 FILTER isLiteral(?o)
-} group by ?sclass ?p
+}

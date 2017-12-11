@@ -8,4 +8,4 @@ where {
 ?s a ?sclass .
 ?o a ?oclass .
 ?s ?p ?o .
-} group by ?sclass ?oclass ?p
+}
